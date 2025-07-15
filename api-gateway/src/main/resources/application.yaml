@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/api/auth/**
+        - id: file-service
+          uri: lb://file-service
+          predicates:
+            - Path=/api/file/**
+        - id: metadata-service
+          uri: lb://metadata-service
+          predicates:
+            - Path=/api/metadata/**
+        - id: excel-import-service
+          uri: lb://excel-import-service
+          predicates:
+            - Path=/api/excel/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
