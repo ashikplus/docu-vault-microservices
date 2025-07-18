@@ -21,3 +21,9 @@ cloud:
       auto: false
   s3:
     bucket: docuvault-bucket
+
+jwt:
+  secret: b9h3M8vKf7N6Lk1Qp4Iw3jYx8VrP9TmcLAlwC4wZlO4=
+
+metadata:
+  url: http://localhost:8083/api/metadata

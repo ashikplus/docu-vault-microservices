@@ -1,4 +1,4 @@
-package org.file.service;
+package com.excel.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class FileServiceApplication 
+public class ExcelImportServiceApplication 
 {
 	public static void main( String[] args )
     {
-    	SpringApplication.run(FileServiceApplication.class, args);
+    	SpringApplication.run(ExcelImportServiceApplication.class, args);
     }
 }

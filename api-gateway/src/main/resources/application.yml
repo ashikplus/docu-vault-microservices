@@ -10,11 +10,11 @@ spring:
         - id: auth-service
           uri: lb://auth-service
           predicates:
-            - Path=/api/auth/**
+            - Path=/api/auth/**, /api/home/**
         - id: file-service
           uri: lb://file-service
           predicates:
-            - Path=/api/file/**
+            - Path=/api/file/**, /api/files/**
         - id: metadata-service
           uri: lb://metadata-service
           predicates:
@@ -22,7 +22,7 @@ spring:
         - id: excel-import-service
           uri: lb://excel-import-service
           predicates:
-            - Path=/api/excel/**
+            - Path=/api/excel/**, /api/import/**
 
 eureka:
   client:

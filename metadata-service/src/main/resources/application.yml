@@ -1,11 +1,11 @@
 server:
-  port: 8084
+  port: 8083
 
 spring:
   application:
-    name: excel-import-service
+    name: metadata-service
   datasource:
-    url: jdbc:mysql://localhost:3310/exceldb
+    url: jdbc:mysql://localhost:3309/metadb
     username: root
     password: password
   jpa:
