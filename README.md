@@ -1,7 +1,3 @@
-from pathlib import Path
-
-# Content of the updated README file
-readme_content = """
 # 📦 Microservices-based Excel Importer System
 
 This project is a **Spring Boot Microservices Architecture** for securely importing Excel files from AWS S3 into a MySQL database using **Spring Batch**, with full support for **JWT-based authentication**, **API Gateway**, **Service Discovery**, and more.
@@ -44,7 +40,7 @@ This system is built using the **Spring Boot Microservices pattern**, split into
 - ✅ Clean and Modular Code Structure
 - ✅ Import Excel (.xlsx) files
 - ✅ Use Spring Batch for efficient chunk processing
-- ✅ Connect with AWS S3 / MinIO for file storage
+- ✅ Connect with AWS S3
 - ✅ Store data into a relational DB (MySQL)
 - ✅ JWT-based security — **handled locally in each service**
 - ✅ Microservice-compatible — fully integrated with service discovery and API gateway
