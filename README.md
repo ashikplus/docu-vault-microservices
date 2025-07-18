@@ -16,7 +16,7 @@ This system is built using the **Spring Boot Microservices pattern**, split into
 | `api-gateway`          | Central entry point — **forwards requests only**, does **not** validate JWT.|
 | `file-service`         | Handles file uploads/downloads to AWS S3 or MinIO.                         |
 | `metadata-service`     | Stores metadata info about uploaded files.                                 |
-| `excel-import-service` | Downloads Excel from S3/MinIO and imports data into MySQL via Spring Batch.|
+| `excel-import-service` | Downloads Excel from S3 and imports data into MySQL via Spring Batch.|
 | `discovery-server`     | Service discovery for all microservices.                                   |
 
 ---
